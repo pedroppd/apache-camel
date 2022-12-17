@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: br.com.apachecamel.ApachecamelApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.83 s <<< FAILURE! - in br.com.apachecamel.ApachecamelApplicationTests
+contextLoads  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[C:/Users/pedro/Downloads/MOCK_DATA_RESULT] <<< in route: Route(route1)[From[file://C:\Users\pedro\apache-cammel\input... because of No endpoint could be found for: C:///Users/pedro/Downloads/MOCK_DATA_RESULT, please check your classpath contains the needed Camel component jar.
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: C:///Users/pedro/Downloads/MOCK_DATA_RESULT, please check your classpath contains the needed Camel component jar.
+
