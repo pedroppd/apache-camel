@@ -26,7 +26,11 @@ public class ApachecamelApplication extends RouteBuilder implements CommandLineR
     @Override
     public void configure() {
         from("file://" + PATH + "input")
+                .split(body().tokenize("\n"))
+                .streaming()
                 .process(new ValidateLine())
+                //.unmarshal()
+                //.process(new ValidateLine())
                 .to("file://" + PATH + "output");
     }
 }
